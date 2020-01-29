@@ -1,0 +1,265 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<TITLE>MediaEval2019</TITLE>
+    <LINK href="./main.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+
+<BODY> 
+<a href="https://github.com/bilalsakha/pixel_privacy-19" class="github-corner" aria-label="View source on Github" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<DIV id="bodyframe">
+
+<!-- Main Content Body Frame -->
+<DIV id="projectbody">
+<BR>
+ <!-- InstanceBeginEditable name="body frame" -->
+ <TABLE width="950" border="0">
+   <TBODY>
+     <TR>
+       <TD colspan="3"><DIV align="center"><STRONG>MediaEval2019 - MediaEval Benchmarking Initiative for Multimedia Evaluation</STRONG><br /><a href="http://www.multimediaeval.org/mediaeval2019/pixelprivacy/" target="_blank"><strong>Pixel Privacy</strong></a></DIV></TD>
+     </TR>
+     <TR>
+       <TD colspan="3">&nbsp;</TD>
+     </TR>
+     <TR>
+       <TD colspan="3"><DIV align="center" class="xlarge">Image Enhancement and Adversarial Attack Pipeline for Scene Privacy Protection</DIV></TD>
+     </TR>
+   </TBODY>
+ </TABLE>
+
+<br>
+ 
+
+<div align = "center">
+<div class="authorname" style="font-size:large;line-adjust:0">Muhammad Bilal Sakha<sup>1</sup></div>
+<div class="authoraddress" style="line-adjust:0"><sup>1</sup>Habib University, Karachi, Pakistan <br /></div>
+<div class="authoremail email" style="line-adjust:0">mbilal{dot}sakha{at}gmail{dot}com</div>
+
+<br/>
+<a href="https://github.com/bilalsakha/pixel_privacy-19" target="_blank">Source Code</a> (coming soon)
+</div>
+<br>
+ 
+<figure align = "center">
+<IMG src="./public/img/pipeline.png" width=500 style="display: block; margin-left: auto; margin-right: auto;"> 
+<br>
+<figcaption>The complete pipeline of our proposed method.</figcaption>
+
+</figure>
+ 
+<br>
+<TABLE width="910" border="0">
+	<TBODY>
+    <TR>
+		<TD width="10"></TD>
+        <TD width="400">
+			<a href="https://drive.google.com/file/d/19NXGjzkZEMBBOB3LoeX5CaHUTc0VIGbj/view?usp=sharing" target="_blank">Paper</a> link.
+		</TD>
+    </TR>
+  </TBODY>
+</TABLE>	
+
+ 
+<TABLE width="910" border="0">
+  <TBODY>
+	<TR>
+		<TD width="10"></TD>
+		<TD class="large">Abstract</TD>
+    </TR>
+    <TR>
+		<TD width="10"></TD>
+        <TD width="400"><div align="justify">We proposed approaches to prevent automatic inference of scene class by classifiers and also enhance (or maintain) the visual appeal of images. The task was part of the Pixel Privacy challenge of the MediaEval 2019 workshop. In the fusion based approaches we applied adversarial perturbations on the images enhanced by image enhancement algorithms instead of the original images. They combine the benefits of image style transfer/contrast enhancement and the white-box adversarial attack methods and have not been previously used in the literature for fooling the classifier and enhancing the images at the same time. We also propose to use simple Euclidean transformations which include image translation and rotation and show their efficacy in fooling the classifier. We test the proposed approaches on a subset of the Places365-standard dataset and got promising results. </div>
+		</TD>
+    </TR>
+	</TBODY>
+</TABLE>
+
+<br><br><hr width='920'><br><br>
+
+<TABLE width="910" border="0">
+  <TBODY>
+	<TR>
+		<TD width="10"></TD>
+		<TD class="large">Sample Results on Places365-standard dataset</TD>
+    </TR>
+	</TBODY>
+</TABLE>
+
+<br><br>
+
+<div id="PLACES365"></div>
+
+
+<br><br>
+
+<script language="javascript" type=text/javascript>
+
+function switchImage( divElement, imageURL )
+{
+	document.getElementById( divElement ).src = imageURL;
+}
+
+var nComps = 0;	
+function addComparisonSet( images, names, pad, width, attachDiv, suppressSpaceAfter, downside )
+{
+	var imageset = "imageset" + nComps;
+	var fieldset = "field" + nComps;
+	var formset = "form" + nComps;
+	
+	var img = "<img id='" + imageset + "' src='" + images[0] + "'>";
+	var img_fixed = "<img src='" + images[0] + "'>";
+	var html;
+
+	if(downside){
+		html = "<TABLE width='915' align='left' border='1'><TBODY><TR><TD align='left'>"+ img +"</TD></TR><TD align='left'>";
+	}
+	else{
+		html = "<TABLE width='915' border='1'><TBODY><TR><TD width='" + pad + "'></TD><TD width='" + width + "'>"+ img +"</TD><TD width='10'></TD><TD>";
+	}
+	
+	html = "<TABLE width='915' border='1'><TBODY><TR><td width='100'>Original Image"+img_fixed+"</td><td width='187'></td></TD><TD width='" + width + "'>Image after applying our algorithm"+ img +"</TD><TD>";
+
+	var form = "<form name='" + formset + "'>";
+	
+	for( var i = 0; i < images.length; i++ )
+	{
+		var checked = "";
+		if( i == 0 )
+		{
+			checked = " checked";
+		}
+		
+		form += "<input type='radio' name='" + fieldset + "' value='" + i + "' onchange=\'switchImage( \"" + imageset + "\", \"" + images[i] + "\" )\'" + checked + ">" + names[i];
+		if (! downside){
+			form += "<br/>";
+		}
+	}
+
+	// If you want a horizontal line separating the items:
+	html += "</form></TD></TR></TBODY></TABLE><br><hr width='920'><br>";
+	// If not:
+	// form += "</form>";
+
+	if(downside){
+		html += form + "</TD></TBODY></TABLE>";
+	}
+	else{
+		html += form + "</TD></TR></TBODY></TABLE>";
+	}
+
+	
+	if( !suppressSpaceAfter )
+	{
+		html += "<br><br>";
+	}
+
+	nComps++;
+
+	// Add set to document
+	var tab = document.createElement("DIV");
+	tab.setAttribute('align', 'left');
+	tab.innerHTML = html;
+	document.getElementById(attachDiv).appendChild( tab );
+}
+
+var names = ["Original",
+				"CartoonGAN + least likely class",
+				"CartoonGAN + PGD",
+				"Contrast Enhancement + least likely class",
+				"Private-FGSM",
+				"Euclidean transformations"
+			];
+
+
+var images1 = [ "./public/demo/1.jpg",
+				"./public/demo/1-CGAN_FGSM.jpg",
+				"./public/demo/1-CGAN_PGD.jpg",
+				"./public/demo/1-ConEnh_adv.jpg",
+				"./public/demo/1-pFGSM.jpg",
+				"./public/demo/1-e_t.jpg",
+			];
+
+var images2 = [ "./public/demo/2.jpg",
+				"./public/demo/2-CGAN_FGSM.jpg",
+				"./public/demo/2-CGAN_PGD.jpg",
+				"./public/demo/2-ConEnh_adv.jpg",
+				"./public/demo/2-pFGSM.jpg",
+				"./public/demo/2-e_t.jpg",
+				];
+
+var images4 = [ "./public/demo/4.jpg",
+				"./public/demo/4-CGAN_FGSM.jpg",
+				"./public/demo/4-CGAN_PGD.jpg",
+				"./public/demo/4-ConEnh_adv.jpg",
+				"./public/demo/4-pFGSM.jpg",
+				"./public/demo/4-e_t.jpg",
+				];
+
+var images5 = [ "./public/demo/5.jpg",
+				"./public/demo/5-CGAN_FGSM.jpg",
+				"./public/demo/5-CGAN_PGD.jpg",
+				"./public/demo/5-ConEnh_adv.jpg",
+				"./public/demo/5-pFGSM.jpg",
+				"./public/demo/5-e_t.jpg",
+				];
+
+var images9 = [ "./public/demo/9.jpg",
+				"./public/demo/9-CGAN_FGSM.jpg",
+				"./public/demo/9-CGAN_PGD.jpg",
+				"./public/demo/9-ConEnh_adv.jpg",
+				"./public/demo/9-pFGSM.jpg",
+				"./public/demo/9-e_t.jpg",
+				];
+
+var images10 = ["./public/demo/10.jpg",
+				"./public/demo/10-CGAN_FGSM.jpg",
+				"./public/demo/10-CGAN_PGD.jpg",
+				"./public/demo/10-ConEnh_adv.jpg",
+				"./public/demo/10-pFGSM.jpg",
+				"./public/demo/10-e_t.jpg",
+				];
+
+
+// var images2 ...	
+
+addComparisonSet( images1, names, 250, 100,  "PLACES365");
+addComparisonSet( images2, names, 250, 100,  "PLACES365");
+addComparisonSet( images4, names, 250, 100,  "PLACES365");
+addComparisonSet( images5, names, 250, 100,  "PLACES365");
+addComparisonSet( images9, names, 250, 100,  "PLACES365");
+addComparisonSet( images10, names, 250, 100,  "PLACES365");
+
+
+</script>
+
+<hr width='920'><br><br>
+
+<TABLE width="910" border="0">
+  <TBODY>
+	<TR>
+		<TD width="10"></TD>
+		<TD class="large">PIXEL PRIVACY</TD>
+    </TR>
+	<TR>
+		<TD height="10"></TD>
+    </TR>
+	<TR>
+		<TD width="10"></TD>
+		<TD>MediaEval'19, 27-29 October 2019, Sophia Antipolis, France.</TD>
+	</TR>
+	<TR>
+		<TD height="10"></TD>
+    </TR>
+	<TR>
+		<TD width="10"></TD>
+		<TD>Images courtesy of <a href="http://places2.csail.mit.edu" target="_blank">Places: A 10 million Image Database for Scene Recognition</a> - thanks!</TD>
+	</TR>
+  </TBODY>
+</TABLE>
+
+
+<br><br><br><br>
+
+</BODY></HTML>
