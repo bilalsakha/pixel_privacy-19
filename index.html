@@ -1,238 +1,466 @@
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<HTML xmlns="http://www.w3.org/1999/xhtml">
-<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<TITLE>MediaEval 2019 Workshop on Pixel Privacy, Sophia Antipolis, France.</TITLE>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <TITLE>MediaEval 2019 Workshop on Pixel Privacy, France</TITLE>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <LINK href="./main.css" rel="stylesheet" type="text/css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
 
-</HEAD>
-
-<BODY> 
-<a href="https://github.com/bilalsakha/pixel_privacy-19" class="github-corner" aria-label="View source on Github" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<body>
+  <a href="https://github.com/bilalsakha/pixel_privacy-19" class="github-corner" aria-label="View source on Github" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <DIV id="bodyframe">
 
-<!-- Main Content Body Frame -->
-<DIV id="projectbody">
-<BR>
- <!-- InstanceBeginEditable name="body frame" -->
- <TABLE width="950" border="0">
-   <TBODY>
-     <TR>
-       <TD colspan="3"><DIV align="center"><STRONG>MediaEval2019 - MediaEval Benchmarking Initiative for Multimedia Evaluation</STRONG><br /><a href="http://www.multimediaeval.org/mediaeval2019/pixelprivacy/" target="_blank"><strong>Pixel Privacy</strong></a></DIV></TD>
-     </TR>
-     <TR>
-       <TD colspan="3">&nbsp;</TD>
-     </TR>
-     <TR>
-       <TD colspan="3"><DIV align="center" class="xlarge">Image Enhancement and Adversarial Attack Pipeline for Scene Privacy Protection</DIV></TD>
-     </TR>
-   </TBODY>
- </TABLE>
-
-<br>
- 
-
-<div align = "center">
-<div class="authorname" style="font-size:large;line-adjust:0">Muhammad Bilal Sakha<sup>1</sup></div>
-<div class="authoraddress" style="line-adjust:0"><sup>1</sup>Habib University, Karachi, Pakistan <br /></div>
-<div class="authoremail email" style="line-adjust:0">mbilal{dot}sakha{at}gmail{dot}com</div>
-
-<br/>
-<a href="https://github.com/bilalsakha/pixel_privacy-19" target="_blank">Source Code</a> (coming soon)
-</div>
-<br>
- 
-<figure align = "center">
-<IMG src="./public/img/pipeline.png" width=500 style="display: block; margin-left: auto; margin-right: auto;"> 
-<br>
-<figcaption>The complete pipeline of our proposed method.</figcaption>
-
-</figure>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<br>
-<TABLE width="910" border="0">
-	<TBODY>
+  <div class="container bg-white">
+    <div class="text-center mt-5">
+      <DIV align="center"><STRONG>MediaEval2019 - MediaEval Benchmarking Initiative for Multimedia Evaluation</STRONG><br /><a href="http://www.multimediaeval.org/mediaeval2019/pixelprivacy/" target="_blank"><strong>Pixel Privacy</strong></a></DIV>
+      
+    <TBODY>
+      <TR>
+        <TD colspan="3">&nbsp;</TD>
+      </TR>
+      <TR>
+        <TD colspan="3"><DIV align="center" class="xlarge">Image Enhancement and Adversarial Attack Pipeline for Scene Privacy Protection</DIV></TD>
+      </TR>
+      <br>
+    </TBODY>
+      <div>
+        <div>
+          <div>Muhammad Bilal Sakha<sup>1</sup></div>
+          <div><sup>1</sup>Habib University, Karachi, Pakistan <br /></div>
+          <div>mbilal{dot}sakha{at}gmail{dot}com</div>
+        </div>
+        <br />
+        <div>
+          <a href="https://github.com/bilalsakha/pixel_privacy-19">Source Code</a> (coming soon)
+        </div>
+        <br>
+      </div>
+      <div>
+        <img class="img-fluid" src="./public/img/pipeline.png" width="500"
+          style="display: block; margin-left: auto; margin-right: auto;" />
+        <div>The complete pipeline of our proposed method.</div>
+      </div>
+      <br>
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <div>
+      Camera-ready paper: <a href="https://drive.google.com/file/d/19NXGjzkZEMBBOB3LoeX5CaHUTc0VIGbj/view?usp=sharing" target="_blank"><i class="fa fa-external-link"></i></a>
+    </div>
+    <h5><strong>Abstract: </strong> </h5>
+    <div class="text-justify">
+      We proposed approaches to prevent automatic inference of scene class by classifiers and also enhance (or maintain) the visual appeal of images. The task was part of the Pixel Privacy challenge of the MediaEval 2019 workshop. In the fusion based approaches we applied adversarial perturbations on the images enhanced by image enhancement algorithms instead of the original images. They combine the benefits of image style transfer/contrast enhancement and the white-box adversarial attack methods and have not been previously used in the literature for fooling the classifier and enhancing the images at the same time. We also propose to use simple Euclidean transformations which include image translation and rotation and show their efficacy in fooling the classifier. We test the proposed approaches on a subset of the Places365-standard dataset and got promising results. 
+    </div>
+    <br>
+  </div>
+  <section id="demo-section" class="container">
+  <TBODY>
     <TR>
-		<TD width="10"></TD>
-        <TD width="400">
-			Camera-ready paper: <a href="https://drive.google.com/file/d/19NXGjzkZEMBBOB3LoeX5CaHUTc0VIGbj/view?usp=sharing" target="_blank"><i class="fa fa-external-link"></i></a>
-		</TD>
+      <TD width="10"></TD>
+      <TD class="large"><h6><strong>Sample Results on Places365-standard dataset</strong> </h6> </TD>
     </TR>
   </TBODY>
-</TABLE>	
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script>
+    let filters = [
+      "Original",
+      "CartoonGAN + least likely class",
+      "CartoonGAN + PGD",
+      "Contrast Enhancement + least likely class",
+      "Private-FGSM",
+      "Euclidean transformations"
+    ];
 
- 
-<TABLE width="910" border="0">
-  <TBODY>
-	<TR>
-		<TD width="10"></TD>
-		<TD class="large">Abstract</TD>
-    </TR>
-    <TR>
-		<TD width="10"></TD>
-        <TD width="400"><div align="justify">We proposed approaches to prevent automatic inference of scene class by classifiers and also enhance (or maintain) the visual appeal of images. The task was part of the Pixel Privacy challenge of the MediaEval 2019 workshop. In the fusion based approaches we applied adversarial perturbations on the images enhanced by image enhancement algorithms instead of the original images. They combine the benefits of image style transfer/contrast enhancement and the white-box adversarial attack methods and have not been previously used in the literature for fooling the classifier and enhancing the images at the same time. We also propose to use simple Euclidean transformations which include image translation and rotation and show their efficacy in fooling the classifier. We test the proposed approaches on a subset of the Places365-standard dataset and got promising results. </div>
-		</TD>
-    </TR>
-	</TBODY>
-</TABLE>
+    let imageSets = [
+      {
+        Original: {
+          src: "./public/demo/1.jpg", predictions: `Original Image top-5 prediction<br>
+          0.696 -> mosque/outdoor<br>
+          0.120 -> church/outdoor<br>
+          0.040 -> mausoleum<br>
+          0.033 -> museum/outdoor<br>
+          0.028 -> palace` },
+        "CartoonGAN + least likely class": {
+          src: "./public/demo/1-CGAN_FGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.989 -> baseball_field<br>
+            0.006 -> stadium/baseball<br>
+            0.002 -> soccer_field<br>
+            0.001 -> volleyball_court/outdoor<br>
+            0.000 -> museum/indoor`
+        },
+        "CartoonGAN + PGD": {
+          src: "./public/demo/1-CGAN_PGD.jpg",
+          predictions: `top-5 prediction<br>
+            0.176 -> church/outdoor<br>
+            0.131 -> museum/outdoor<br>
+            0.099 -> temple/asia<br>
+            0.094 -> palace<br>
+            0.077 -> mosque/outdoor`
+        },
+        "Contrast Enhancement + least likely class": {
+          src: "./public/demo/1-ConEnh_adv.jpg",
+          predictions: `top-5 prediction<br>
+            0.987 -> bowling_alley<br>
+            0.004 -> mosque/outdoor<br>
+            0.002 -> church/outdoor<br>
+            0.001 -> mausoleum<br>
+            0.001 -> museum/outdoor`
+        },
+        "Private-FGSM": {
+          src: "./public/demo/1-pFGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.981 -> bowling_alley<br>
+            0.005 -> mosque/outdoor<br>
+            0.003 -> church/outdoor<br>
+            0.002 -> mausoleum<br>
+            0.001 -> tower`
+        },
+        "Euclidean transformations": {
+          src: "./public/demo/1-e_t.jpg",
+          predictions: `top-5 prediction<br>
+            0.315 -> tower<br>
+            0.117 -> church/outdoor<br>
+            0.095 -> palace<br>
+            0.084 -> mosque/outdoor<br>
+            0.058 -> castle`
+        }
+      },
+      {
+        Original: {
+          src: "./public/demo/2.jpg", predictions: `Original Image top-5 prediction<br>
+          0.522 -> waiting_room<br>
+          0.335 -> living_room<br>
+          0.037 -> artists_loft<br>
+          0.036 -> television_room<br>
+          0.012 -> bow_window/indoor` },
+        "CartoonGAN + least likely class": {
+          src: "./public/demo/2-CGAN_FGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.998 -> martial_arts_gym<br>
+            0.001 -> gymnasium/indoor<br>
+            0.000 -> boxing_ring<br>
+            0.000 -> recreation_room<br>
+            0.000 -> basketball_court/indoor`
+        },
+        "CartoonGAN + PGD": {
+          src: "./public/demo/2-CGAN_PGD.jpg",
+          predictions: `top-5 prediction<br>
+            0.393 -> bedroom<br>
+            0.268 -> bedchamber<br>
+            0.073 -> living_room<br>
+            0.067 -> hotel_room<br>
+            0.037 -> dorm_room`
+        },
+        "Contrast Enhancement + least likely class": {
+          src: "./public/demo/2-ConEnh_adv.jpg",
+          predictions: `top-5 prediction<br>
+            0.984 -> jacuzzi/indoor<br>
+            0.010 -> bathroom<br>
+            0.005 -> shower<br>
+            0.001 -> swimming_pool/indoor<br>
+            0.000 -> alcove`
+        },
+        "Private-FGSM": {
+          src: "./public/demo/2-pFGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.992 -> boathouse<br>
+            0.002 -> pier<br>
+            0.002 -> canal/natural<br>
+            0.001 -> lake/natural<br>
+            0.001 -> lock_chamber`
+        },
+        "Euclidean transformations": {
+          src: "./public/demo/2-e_t.jpg",
+          predictions: `top-5 prediction<br>
+            0.464 -> living_room<br>
+            0.098 -> bow_window/indoor<br>
+            0.082 -> artists_loft<br>
+            0.036 -> hotel_room<br>
+            0.032 -> attic`
+        }
+      },
+      {
+        Original: {
+          src: "./public/demo/4.jpg", predictions: `Original Image top-5 prediction<br>
+          0.451 -> castle<br>
+          0.130 -> ruin<br>
+          0.119 -> tower<br>
+          0.055 -> mausoleum<br>
+          0.047 -> oast_house` },
+        "CartoonGAN + least likely class": {
+          src: "./public/demo/4-CGAN_FGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.989 -> utility_room<br>
+            0.011 -> laundromat<br>
+            0.000 -> closet<br>
+            0.000 -> pantry<br>
+            0.000 -> storage_room`
+        },
+        "CartoonGAN + PGD": {
+          src: "./public/demo/4-CGAN_PGD.jpg",
+          predictions: `top-5 prediction<br>
+            0.322 -> mausoleum<br>
+            0.072 -> oast_house<br>
+            0.046 -> igloo<br>
+            0.042 -> ruin<br>
+            0.035 -> kasbah`
+        },
+        "Contrast Enhancement + least likely class": {
+          src: "./public/demo/4-ConEnh_adv.jpg",
+          predictions: `top-5 prediction<br>
+            0.982 -> street<br>
+            0.005 -> alley<br>
+            0.004 -> medina<br>
+            0.001 -> promenade<br>
+            0.001 -> bazaar/outdoor`
+        },
+        "Private-FGSM": {
+          src: "./public/demo/4-pFGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.992 -> barndoor<br>
+            0.002 -> loading_dock<br>
+            0.001 -> medina<br>
+            0.001 -> barn<br>
+            0.001 -> doorway/outdoor`
+        },
+        "Euclidean transformations": {
+          src: "./public/demo/4-e_t.jpg",
+          predictions: `top-5 prediction<br>
+            0.359 -> ruin<br>
+            0.281 -> castle<br>
+            0.069 -> tower<br>
+            0.036 -> church/outdoor<br>
+            0.035 -> courtyard`
+        }
+      },
+      {
+        Original: {
+          src: "./public/demo/5.jpg", predictions: `Original Image top-5 prediction<br>
+          0.548 -> jacuzzi/indoor<br>
+          0.219 -> bathroom<br>
+          0.076 -> shower<br>
+          0.031 -> sauna<br>
+          0.023 -> bow_window/indoor` },
+        "CartoonGAN + least likely class": {
+          src: "./public/demo/5-CGAN_FGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.988 -> entrance_hall<br>
+            0.009 -> staircase<br>
+            0.001 -> lobby<br>
+            0.000 -> elevator_lobby<br>
+            0.000 -> mezzanine`
+        },
+        "CartoonGAN + PGD": {
+          src: "./public/demo/5-CGAN_PGD.jpg",
+          predictions: `top-5 prediction<br>
+            0.221 -> childs_room<br>
+            0.209 -> playroom<br>
+            0.050 -> nursery<br>
+            0.033 -> closet<br>
+            0.032 -> medina`
+        },
+        "Contrast Enhancement + least likely class": {
+          src: "./public/demo/5-ConEnh_adv.jpg",
+          predictions: `top-5 prediction<br>
+            0.987 -> stadium/baseball<br>
+            0.006 -> baseball_field<br>
+            0.002 -> bullring<br>
+            0.002 -> amphitheater<br>
+            0.001 -> stadium/soccer`
+        },
+        "Private-FGSM": {
+          src: "./public/demo/5-pFGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.997 -> cemetery<br>
+            0.002 -> mausoleum<br>
+            0.000 -> burial_chamber<br>
+            0.000 -> alcove<br>
+            0.000 -> yard`
+        },
+        "Euclidean transformations": {
+          src: "./public/demo/5-e_t.jpg",
+          predictions: `top-5 prediction<br>
+            0.662 -> bathroom<br>
+            0.089 -> shower<br>
+            0.047 -> coffee_shop<br>
+            0.032 -> beauty_salon<br>
+            0.015 -> jacuzzi/indoor`
+        }
+      },
+      {
+        Original: {
+          src: "./public/demo/9.jpg", predictions: `Original Image top-5 prediction<br>
+          0.387 -> beer_hall<br>
+          0.231 -> dining_hall<br>
+          0.129 -> cafeteria<br>
+          0.050 -> restaurant<br>
+          0.039 -> pizzeria` },
+        "CartoonGAN + least likely class": {
+          src: "./public/demo/9-CGAN_FGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.987 -> garage/outdoor<br>
+            0.007 -> driveway<br>
+            0.002 -> garage/indoor<br>
+            0.001 -> shed<br>
+            0.001 -> loading_dock`
+        },
+        "CartoonGAN + PGD": {
+          src: "./public/demo/9-CGAN_PGD.jpg",
+          predictions: `top-5 prediction<br>
+            0.149 -> nursing_home<br>
+            0.140 -> conference_room<br>
+            0.108 -> cafeteria<br>
+            0.096 -> dining_hall<br>
+            0.093 -> restaurant`
+        },
+        "Contrast Enhancement + least likely class": {
+          src: "./public/demo/9-ConEnh_adv.jpg",
+          predictions: `top-5 prediction<br>
+            0.980 -> park<br>
+            0.010 -> picnic_area<br>
+            0.002 -> campus<br>
+            0.002 -> botanical_garden<br>
+            0.001 -> beer_garden`
+        },
+        "Private-FGSM": {
+          src: "./public/demo/9-pFGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.985 -> banquet_hall<br>
+            0.013 -> dining_hall<br>
+            0.001 -> ballroom<br>
+            0.001 -> dining_room<br>
+            0.000 -> restaurant`
+        },
+        "Euclidean transformations": {
+          src: "./public/demo/9-e_t.jpg",
+          predictions: `top-5 prediction<br>
+            0.213 -> cafeteria<br>
+            0.175 -> beer_hall<br>
+            0.133 -> dining_hall<br>
+            0.103 -> sushi_bar<br>
+            0.092 -> restaurant`
+        }
+      },
+      {
+        Original: {
+          src: "./public/demo/10.jpg", predictions: `Original Image top-5 prediction<br>
+          0.701 -> bullring<br>
+          0.299 -> arena/rodeo<br>
+          0.000 -> racecourse<br>
+          0.000 -> corral<br>
+          0.000 -> stable` },
+        "CartoonGAN + least likely class": {
+          src: "./public/demo/10-CGAN_FGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.989 -> lobby<br>
+            0.003 -> reception<br>
+            0.002 -> elevator_lobby<br>
+            0.001 -> waiting_room<br>
+            0.001 -> living_room`
+        },
+        "CartoonGAN + PGD": {
+          src: "./public/demo/10-CGAN_PGD.jpg",
+          predictions: `top-5 prediction<br>
+            0.701 -> arena/rodeo<br>
+            0.206 -> bullring<br>
+            0.036 -> racecourse<br>
+            0.007 -> corral<br>
+            0.005 -> stable`
+        },
+        "Contrast Enhancement + least likely class": {
+          src: "./public/demo/10-ConEnh_adv.jpg",
+          predictions: `top-5 prediction<br>
+            0.987 -> auto_factory<br>
+            0.012 -> assembly_line<br>
+            0.000 -> repair_shop<br>
+            0.000 -> hangar/indoor<br>
+            0.000 -> heliport`
+        },
+        "Private-FGSM": {
+          src: "./public/demo/10-pFGSM.jpg",
+          predictions: `top-5 prediction<br>
+            0.981 -> landfill<br>
+            0.007 -> slum<br>
+            0.005 -> excavation<br>
+            0.001 -> construction_site<br>
+            0.001 -> archaelogical_excavation`
+        },
+        "Euclidean transformations": {
+          src: "./public/demo/10-e_t.jpg",
+          predictions: `top-5 prediction<br>
+            0.443 -> sandbox<br>
+            0.302 -> bullring<br>
+            0.037 -> arena/rodeo<br>
+            0.024 -> excavation<br>
+            0.022 -> raceway`
+        }
+      }
+    ];
+  </script>
 
-<br><br><hr width='920'><br><br>
+  <script>
+    let switchFilter = (filterName, idPrefix) => {
+      console.log(filterName, idPrefix);
+      let rightImage = $(`#${idPrefix}-right-image`);
+      let rightText = $(`#${idPrefix}-right-text`);
+      rightImage.attr("src", imageSets[idPrefix][filterName].src);
+      rightText.html(imageSets[idPrefix][filterName].predictions);
+    };
 
-<TABLE width="910" border="0">
-  <TBODY>
-	<TR>
-		<TD width="10"></TD>
-		<TD class="large">Sample Results on Places365-standard dataset</TD>
-    </TR>
-	</TBODY>
-</TABLE>
+    let renderImageSet = (imageSet, idPrefix) => {
+      let imagesTemplate = `<hr><div class="row my-3 ">
+            <div class="col-md-3"><h6><b><i>Original Image</i></b></h6><img
+                    class="img-fluid" width="100%" src="${imageSet.Original.src}"  alt="" /></div>
+            <div class="col-md-3">${imageSet.Original.predictions}</div>
+            <div class="col-md-3"><h6><b><i>Image after applying our algorithm</i></b></h6><img
+                    class="img-fluid" width="100%" src="${imageSet.Original.src}" id="${idPrefix}-right-image" alt="" /></div>
+            <div class="col-md-3" id="${idPrefix}-right-text">
+                ${imageSet.Original.predictions}
+            </div>
+        </div><hr>`;
 
-<br><br>
+      let demoSection = $("#demo-section");
+      demoSection.append(imagesTemplate);
 
-<div id="PLACES365"></div>
+      let counter = 0;
+      for (filter of filters) {
+        demoSection.append(
+          `<div class="row">
+                <div class="col">
+                <label><input type="radio" class="mr-2 filter-buttons" name="${idPrefix}-radio" id="${idPrefix}-radio-${counter}" data-filter="${filter}" data-idPrefix='${idPrefix}' />${filter}</label>
+                </div>
+            </div>`
+        );
+        counter++;
+      }
+    };
 
-
-<br><br>
-
-<script language="javascript" type=text/javascript>
-
-function switchImage( divElement, imageURL )
-{
-	document.getElementById( divElement ).src = imageURL;
-}
-
-var nComps = 0;	
-function addComparisonSet( images, names, pad, width, attachDiv, suppressSpaceAfter, downside )
-{
-	var imageset = "imageset" + nComps;
-	var fieldset = "field" + nComps;
-	var formset = "form" + nComps;
-	
-	var img = "<img id='" + imageset + "' src='" + images[0] + "'>";
-	var img_fixed = "<img src='" + images[0] + "'>";
-	var html;
-
-	if(downside){
-		html = "<TABLE width='915' align='left' border='1'><TBODY><TR><TD align='left'>"+ img +"</TD></TR><TD align='left'>";
-	}
-	else{
-		html = "<TABLE width='915' border='1'><TBODY><TR><TD width='" + pad + "'></TD><TD width='" + width + "'>"+ img +"</TD><TD width='10'></TD><TD>";
-	}
-	
-	html = "<TABLE width='915' border='1'><TBODY><TR><td width='100'>Original Image"+img_fixed+"</td><td width='187'></td></TD><TD width='" + width + "'>Image after applying our algorithm"+ img +"</TD><TD>";
-
-	var form = "<form name='" + formset + "'>";
-	
-	for( var i = 0; i < images.length; i++ )
-	{
-		var checked = "";
-		if( i == 0 )
-		{
-			checked = " checked";
-		}
-		
-		form += "<input type='radio' name='" + fieldset + "' value='" + i + "' onchange=\'switchImage( \"" + imageset + "\", \"" + images[i] + "\" )\'" + checked + ">" + names[i];
-		if (! downside){
-			form += "<br/>";
-		}
-	}
-
-	// If you want a horizontal line separating the items:
-	html += "</form></TD></TR></TBODY></TABLE><br><hr width='920'><br>";
-	// If not:
-	// form += "</form>";
-
-	if(downside){
-		html += form + "</TD></TBODY></TABLE>";
-	}
-	else{
-		html += form + "</TD></TR></TBODY></TABLE>";
-	}
-
-	
-	if( !suppressSpaceAfter )
-	{
-		html += "<br><br>";
-	}
-
-	nComps++;
-
-	// Add set to document
-	var tab = document.createElement("DIV");
-	tab.setAttribute('align', 'left');
-	tab.innerHTML = html;
-	document.getElementById(attachDiv).appendChild( tab );
-}
-
-var names = ["Original",
-				"CartoonGAN + least likely class",
-				"CartoonGAN + PGD",
-				"Contrast Enhancement + least likely class",
-				"Private-FGSM",
-				"Euclidean transformations"
-			];
-
-
-var images1 = [ "./public/demo/1.jpg",
-				"./public/demo/1-CGAN_FGSM.jpg",
-				"./public/demo/1-CGAN_PGD.jpg",
-				"./public/demo/1-ConEnh_adv.jpg",
-				"./public/demo/1-pFGSM.jpg",
-				"./public/demo/1-e_t.jpg",
-			];
-
-var images2 = [ "./public/demo/2.jpg",
-				"./public/demo/2-CGAN_FGSM.jpg",
-				"./public/demo/2-CGAN_PGD.jpg",
-				"./public/demo/2-ConEnh_adv.jpg",
-				"./public/demo/2-pFGSM.jpg",
-				"./public/demo/2-e_t.jpg",
-				];
-
-var images4 = [ "./public/demo/4.jpg",
-				"./public/demo/4-CGAN_FGSM.jpg",
-				"./public/demo/4-CGAN_PGD.jpg",
-				"./public/demo/4-ConEnh_adv.jpg",
-				"./public/demo/4-pFGSM.jpg",
-				"./public/demo/4-e_t.jpg",
-				];
-
-var images5 = [ "./public/demo/5.jpg",
-				"./public/demo/5-CGAN_FGSM.jpg",
-				"./public/demo/5-CGAN_PGD.jpg",
-				"./public/demo/5-ConEnh_adv.jpg",
-				"./public/demo/5-pFGSM.jpg",
-				"./public/demo/5-e_t.jpg",
-				];
-
-var images9 = [ "./public/demo/9.jpg",
-				"./public/demo/9-CGAN_FGSM.jpg",
-				"./public/demo/9-CGAN_PGD.jpg",
-				"./public/demo/9-ConEnh_adv.jpg",
-				"./public/demo/9-pFGSM.jpg",
-				"./public/demo/9-e_t.jpg",
-				];
-
-var images10 = ["./public/demo/10.jpg",
-				"./public/demo/10-CGAN_FGSM.jpg",
-				"./public/demo/10-CGAN_PGD.jpg",
-				"./public/demo/10-ConEnh_adv.jpg",
-				"./public/demo/10-pFGSM.jpg",
-				"./public/demo/10-e_t.jpg",
-				];
-
-
-// var images2 ...	
-
-addComparisonSet( images1, names, 250, 100,  "PLACES365");
-addComparisonSet( images2, names, 250, 100,  "PLACES365");
-addComparisonSet( images4, names, 250, 100,  "PLACES365");
-addComparisonSet( images5, names, 250, 100,  "PLACES365");
-addComparisonSet( images9, names, 250, 100,  "PLACES365");
-addComparisonSet( images10, names, 250, 100,  "PLACES365");
-
-
-</script>
+    renderImageSet(imageSets[0], 0);
+    renderImageSet(imageSets[1], 1);
+    renderImageSet(imageSets[2], 2);
+    renderImageSet(imageSets[3], 3);
+    renderImageSet(imageSets[4], 4);
+    renderImageSet(imageSets[5], 5);
+  </script>
+  <script>
+    $(".filter-buttons").click(e => {
+      let target = $(e.target);
+      console.log(target);
+      switchFilter(target.attr("data-filter"), target.attr("data-idPrefix"));
+    });
+  </script>
 
 <hr width='920'><br><br>
 
@@ -247,7 +475,7 @@ addComparisonSet( images10, names, 250, 100,  "PLACES365");
     </TR>
 	<TR>
 		<TD width="10"></TD>
-		<TD>MediaEval'19, 27-29 October 2019, Sophia Antipolis, France.</TD>
+		<TD>MediaEval2019, 27-29 October 2019, Sophia Antipolis, France.</TD>
 	</TR>
 	<TR>
 		<TD height="10"></TD>
@@ -260,6 +488,9 @@ addComparisonSet( images10, names, 250, 100,  "PLACES365");
 </TABLE>
 
 
-<br><br><br><br>
+<br><br>
 
-</BODY></HTML>
+
+</body>
+
+</html>
