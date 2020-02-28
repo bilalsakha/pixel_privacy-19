@@ -18,8 +18,8 @@ body {
 	background-color:#282828;
 	background-size:16px 16px;
 
-	/*font-family: "Times New Roman", Times, serif;
-	font-size:medium;*/
+	font-family: "Times New Roman", Times, serif;
+	font-size:medium;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -222,7 +222,7 @@ a.menu_select:active {
 	margin-left: 20px;
 	width:950px;
 	background-color: #FFFFFF;
-	/*overflow-x:hidden; /* for horizontal scroll bug */
+	overflow-x:hidden; /* for horizontal scroll bug */
 	}
 	
 #header {
@@ -276,14 +276,3 @@ a.menu_select:active {
 	margin-bottom:5px;
 	}
 
-/*.column {
-	float: left;
-	width: 50%;
-	}
-	
-	/* Clear floats after the columns */
-	/*.row:after {
-	content: "";
-	display: table;
-	clear: both;
-	}*/
